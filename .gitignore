@@ -1,0 +1,75 @@
+## CeresFloodAssessment — combined .gitignore
+## Place this file at the SOLUTION ROOT (same folder as CeresFloodAssessment.sln)
+## Covers: Api, Application, Domain, Infrastructure projects + any client (React/Vite) app
+
+# ================= .NET =================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Publish output
+publish/
+*.pubxml
+*.pubxml.user
+
+# ASP.NET Core secrets/config
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+
+# ================= Node / React / Vite =================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ================= Environment variables =================
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# ================= Editor / OS =================
+.vscode/
+.DS_Store
+Thumbs.db

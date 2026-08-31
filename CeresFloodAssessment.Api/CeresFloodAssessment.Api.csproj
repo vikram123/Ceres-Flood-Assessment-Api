@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>ceres-flood-assessment-api</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <IntermediateOutputPath>obj\Debug\net8.0\net5.0</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+   <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CeresFloodAssessment.Application\CeresFloodAssessment.Application.csproj" />
+    <ProjectReference Include="..\CeresFloodAssessment.Infrastructure\CeresFloodAssessment.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
